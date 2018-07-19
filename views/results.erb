@@ -2,8 +2,8 @@
 
 <h2>Number of Words: <%= anaylized_text.count_of_words %></h2>
 
-<h2>Vowels: </h2>
+<h2>Vowels: <%= anaylized_text.count_of_vowels %></h2>
 
-<h2>Consonants: </h2>
+<h2>Consonants: <%= anaylized_text.count_of_consonants %></h2>
 
-<h2>Most Common Letter: _____ used _____ times</h2>
+<h2>Most Common Letter: <%= anaylized_text.most_used_letter.first.upcase %> used <%= anaylized_text.most_used_letter.values.first %> times</h2>
