@@ -28,12 +28,12 @@ class TextAnalyzer
       arr2[c] = arr.count(c)
     end
 
-    def most_used_letter
-      no_spaces = text.gsub(" ", "")
-      letters = no_spaces.split("")
-      histogram = Hash[*letters.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
-      histogram.max_by{ |k, v| v }
-    end
+#    def most_used_letter
+#      no_spaces = text.gsub(" ", "")
+#      letters = no_spaces.split("")
+#      histogram = Hash[*letters.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
+#      histogram.max_by{ |k, v| v }
+#    end
 
     biggest = { arr1.keys.first => arr2.values.first }
 
