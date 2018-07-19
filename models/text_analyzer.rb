@@ -24,6 +24,7 @@ class TextAnalyzer
     histogram = Hash[*letters.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
     histogram.max_by{ |k, v| v }
   end
+end
 
 #  def most_used_letter
 #    s1 = text.gsub(/[^a-z]/, '') # gets rid of spaces
@@ -46,4 +47,3 @@ class TextAnalyzer
 #
 #    biggest
 #  end
-end
