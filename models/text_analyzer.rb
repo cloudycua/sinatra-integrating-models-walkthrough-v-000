@@ -46,5 +46,5 @@ class TextAnalyzer
 #    histogram = Hash[*letters.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
 #    histogram.max_by{ |k, v| v }
 #  end
-  
+
 end
